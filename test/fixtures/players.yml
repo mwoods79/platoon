@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  gamertag: MyString
+  service_tag: MyString
+  games_total: 1
+
+two:
+  gamertag: MyString
+  service_tag: MyString
+  games_total: 1

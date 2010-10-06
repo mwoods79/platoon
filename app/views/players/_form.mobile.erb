@@ -1,0 +1,8 @@
+<%= form_for @player  do |f| %>
+  <ul class="rounded">
+	<li><%= f.text_field :gamertag, :placeholder => "Gamertag" %></li>
+	<li><%= f.text_field :service_tag, :placeholder => "Service Tag" %></li>
+	<li><%= f.text_field :games_total, :placeholder => "Games Total" %></li>
+  </ul>
+  <%= link_to "Submit", nil, :class => "whiteButton submit" %>
+<% end %>

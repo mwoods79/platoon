@@ -1,0 +1,11 @@
+<% #title "Projects" %>
+<ul class="rounded">
+<% for player in @players %>
+  <li class="arrow">
+    <%= link_to h(player.gamertag), player %>
+    <small class="counter"><%= player.service_tag %></small>
+  </li>
+<% end %>
+</ul>
+
+<ul class="rounded"><li class="arrow"><%= link_to 'New Player', new_player_path %></li></ul>
