@@ -1,12 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'nifty-generators'
+gem 'formtastic'
+gem 'haml'
+
+group :development do
+  gem'nifty-generators'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
