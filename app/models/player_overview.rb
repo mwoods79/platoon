@@ -36,7 +36,7 @@ class PlayerOverview
     dateDiff = 0.0
     unless games == nil
       games.each do |game|
-        dateDiff = date(game_dates[games_today].content)
+        dateDiff = getdate(game_dates[games_today].content)
         if (Time.now - dateDiff) < (60.0 * 60.0 * 24.0)
           games_today += 1
           todays_kills += game.content.to_i
@@ -49,13 +49,13 @@ class PlayerOverview
     
     player[:last_game_date] = nil
     if game_dates.length > 0
-      player[:last_game_date] = date(game_dates.first.content)
+      player[:last_game_date] = getdate(game_dates.first.content)
     end
     
     player
   end
   
-  def self.date(input)
+  def self.getdate(input)
     dateArray = /(\d{1,2})\.(\d{1,2})\.(\d{4})\s(\d{1,2}):(\d{2})\s([A-Za-z]{2})/.match(input)
     hour = 0;
     time = nil

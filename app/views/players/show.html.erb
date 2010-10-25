@@ -43,7 +43,6 @@
 <p>
   <b>Last Game:</b>
   <%= (@playeroverview[:last_game_date]).strftime("%m/%d/%Y %I:%M %p") unless @playeroverview[:last_game_date] == nil %>
-  
 </p>
 
 <%= link_to 'Edit', edit_player_path(@player) %> |
