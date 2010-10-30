@@ -17,7 +17,6 @@ end
 group :development, :test do
   gem "shoulda"
   gem "rspec-rails"
-  gem "ruby-debug19"
 end
 
 

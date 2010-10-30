@@ -62,7 +62,6 @@ class PlayerOverview
     if dateArray != nil and (dateArray.length == 4 or dateArray.length == 7)
       hour = dateArray[4].to_i
       hour += 12 if dateArray[6].to_s == "PM" and hour < 12
-      debugger
       time = Time.new(dateArray[3], dateArray[1], dateArray[2], hour, dateArray[5], 0)
     end
     time
