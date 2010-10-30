@@ -1,4 +1,9 @@
 body {
+  background: url('/images/bg.gif') repeat;
+  background-position: left 40px;      
+  background-attachment: fixed;      
+  background-color: #131516;    
+  color: #333333;
   background-color: #4B7399;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
