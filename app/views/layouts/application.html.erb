@@ -8,6 +8,30 @@
     <%= yield(:head) %>
   </head>
   <body>
+    <div id="header">
+      <h5 id="logo">
+        <%= link_to "Platoon", root_url %>
+      </h5>
+    </div>
+    <div id="navbar">
+      <ul>
+        <li> 
+          <%= link_to "Stats" %>
+        </li>
+        <li> 
+          <%= link_to "Schedule" %>
+        </li>
+        <li> 
+          <%= link_to "Tactics" %>
+        </li>
+        <li> 
+          <%= link_to "Recruit" %>
+        </li>
+        <li> 
+          <%= link_to "Manage" %>
+        </li>
+       </ul>
+      </div>
     <div id="container">
       <%= link_to "Mobile Site", root_url(:mobile => 1) %>
       <% flash.each do |name, msg| %>
