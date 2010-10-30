@@ -9,7 +9,6 @@ gem 'nokogiri'
 group :development do
   gem 'nifty-generators'
   gem "rails-erd"
-  gem "ruby-debug19"
 end
 
 # Bundle gems for the local environment. Make sure to
@@ -18,6 +17,7 @@ end
 group :development, :test do
   gem "shoulda"
   gem "rspec-rails"
+  gem "ruby-debug19"
 end
 
 
