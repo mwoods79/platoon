@@ -23,6 +23,31 @@ a {
   overflow: hidden;
 }
 
+#logo {
+	background-image: url(https://nav.heroku.com/images/logos/logo.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 56px;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 177px;
+	margin: 10px;
+}
+
+#header {
+	width: 100%;
+	background-color: #221199;
+	border-bottom-color: #494573;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border: 0px;
+	font-size: 100%;
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+	vertical-align: baseline;
+}
+
 #container {
   width: 75%;
   margin: 0 auto;
@@ -30,6 +55,11 @@ a {
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
