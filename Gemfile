@@ -5,6 +5,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'formtastic'
 gem 'haml'
 gem 'nokogiri'
+gem 'jquery-rails'
 
 group :development do
   gem 'nifty-generators'
