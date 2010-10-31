@@ -1,0 +1,17 @@
+%header
+  = link_to image_tag("https://nav.heroku.com/images/logos/logo.png", :class => "round"), root_url
+
+  %nav.round
+    %ul
+      %li 
+        = link_to "Stats"
+      %li 
+        = link_to "Schedule"
+      %li 
+        = link_to "Tactics"
+      %li 
+        = link_to "Recruit"
+      %li 
+        = link_to "Manage"
+      %li
+        = link_to "Mobile Site", root_url(:mobile => 1)

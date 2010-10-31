@@ -1,65 +1,81 @@
 body {
   background: url('/images/bg.gif') repeat;
-  background-position: left 40px;      
-  background-attachment: fixed;      
-  background-color: #131516;    
-  color: #333333;
-  background-color: #4B7399;
-  font-family: Verdana, Helvetica, Arial;
-  font-size: 14px;
 }
 
-a img {
-  border: none;
+header {
+  padding-top: 20px;
 }
 
-a {
-  color: #0000FF;
+header img{
+  padding: 1em;
+  background: #fff;
 }
 
-.clear {
-  clear: both;
-  height: 0;
-  overflow: hidden;
+section{
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
 }
 
-#logo {
-	background-image: url(https://nav.heroku.com/images/logos/logo.png);
-	background-repeat: no-repeat;
-	display: block;
-	height: 56px;
-	overflow: hidden;
-	text-indent: -9999px;
-	width: 177px;
-	margin: 10px;
+a{
+  color: #DB5F13;
+  text-decoration: none;
 }
 
-#header {
-	width: 100%;
-	background-color: #221199;
-	border-bottom-color: #494573;
-	border-bottom-style: solid;
-	border-bottom-width: 3px;
-	border: 0px;
-	font-size: 100%;
-	margin: 0px;
-	overflow: hidden;
-	padding: 0px;
-	vertical-align: baseline;
+a:hover{
+  color: #FF9E00;
+  text-decoration: underline;
+  background: white;
 }
 
-#container {
-  width: 75%;
-  margin: 0 auto;
-  background-color: #FFF;
-  padding: 20px 40px;
-  border: solid 1px black;
-  margin-top: 20px;
+a:visited{
+  color: #DB5F13;
+}
 
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+nav{
+  float: right;
+  background: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a{
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.round{
+  -webkit-border-radius: 5px;
+  -mozilla-border-radius: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center; 
+  margin-top: 10px; 
+  width: 960px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+footer nav { 
+  float: none;
+}
+
+.container {
+  width: 960px;
 }
 
 #flash_notice, #flash_error, #flash_alert {
