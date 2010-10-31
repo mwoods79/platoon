@@ -1,5 +1,6 @@
 body {
   background: url('/images/bg.gif') repeat;
+<<<<<<< HEAD
   background-position: left 40px;      
   background-attachment: fixed;      
   background-color: #131516;    
@@ -288,6 +289,84 @@ a.signin.menu-open span {
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+=======
+}
+
+header {
+  padding-top: 20px;
+}
+
+header img{
+  padding: 1em;
+  background: #fff;
+}
+
+section{
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+}
+
+a{
+  color: #DB5F13;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #FF9E00;
+  text-decoration: underline;
+  background: white;
+}
+
+a:visited{
+  color: #DB5F13;
+}
+
+nav{
+  float: right;
+  background: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a{
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.round{
+  -webkit-border-radius: 5px;
+  -mozilla-border-radius: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center; 
+  margin-top: 10px; 
+  width: 960px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+footer nav { 
+  float: none;
+}
+
+.container {
+  width: 960px;
+>>>>>>> e8dc078ba8592ff7f20c8e1911a0368066cbfec3
 }
 
 #flash_notice, #flash_error, #flash_alert {
