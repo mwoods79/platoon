@@ -1,6 +1,5 @@
 body {
   background: url('/images/bg.gif') repeat;
-<<<<<<< HEAD
   background-position: left 40px;      
   background-attachment: fixed;      
   background-color: #131516;    
@@ -366,7 +365,6 @@ footer nav {
 
 .container {
   width: 960px;
->>>>>>> e8dc078ba8592ff7f20c8e1911a0368066cbfec3
 }
 
 #flash_notice, #flash_error, #flash_alert {
