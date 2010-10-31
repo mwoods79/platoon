@@ -6,6 +6,9 @@ gem 'formtastic'
 gem 'haml'
 gem 'nokogiri'
 gem 'jquery-rails'
+gem 'devise'
+gem 'hpricot'
+gem 'ruby_parser'
 
 group :development do
   gem 'nifty-generators'
