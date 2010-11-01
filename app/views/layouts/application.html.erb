@@ -18,7 +18,20 @@
       </h5>
         <ul id="headeritems">
           <li>
-            <div id="topnav" class="topnav"> Have an account? <a href="login" class="signin"><span>Sign in</span></a> </div>
+            <% if user_signed_in? %>
+              <div id="topnav" class="topnav"> 
+                Signed in as <%= current_user.email %>
+                <a href="/users/sign_out" class="signout">
+                  <span>Sign out</span>
+               </a>              
+            <% else %>
+              <div id="topnav" class="topnav"> 
+                Have an account? 
+                <a href="login" class="signin">
+                  <span>Sign in</span>
+                </a> 
+              </div>
+            <% end %>
           </li>
           <li>
             <fieldset id="signin_menu">
