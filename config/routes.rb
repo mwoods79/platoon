@@ -1,4 +1,6 @@
 Reachstats::Application.routes.draw do
+  get "stats/index"
+
   devise_for :users
 
   resources :players

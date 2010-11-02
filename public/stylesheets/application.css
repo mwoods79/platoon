@@ -288,7 +288,6 @@ a.signin.menu-open span {
 	border-top-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-=======
 }
 
 header {
@@ -353,13 +352,22 @@ nav ul li a{
 
 footer {
   text-align: center; 
-  margin-top: 10px; 
-  width: 960px; 
   margin-left: auto; 
   margin-right: auto;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 0px 40px;
+  border: solid 1px black;
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 footer nav { 
+  width: 75%;
   float: none;
 }
 
