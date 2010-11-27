@@ -6,43 +6,23 @@
 </p>
 
 <p>
-  <b>Rank:</b>
-  <%= @playeroverview[:rank] %>
+  <b>Kills:</b>
+  <%= @playerstats[:kills] %>
 </p>
 
 <p>
-  <b>Games played:</b>
-  <%= @playeroverview[:games_played] %>
+  <b>Deaths:</b>
+  <%= @playerstats[:deaths] %>
 </p>
 
 <p>
-  <b>Armor completion:</b>
-  <%= @playeroverview[:armor_completion] %>
+  <b>Games Played:</b>
+  <%= @playerstats[:games_played] %>
 </p>
 
 <p>
-  <b>Daily challenges:</b>
-  <%= @playeroverview[:daily_challenges] %>
-</p>
-
-<p>
-  <b>Weekly challenges:</b>
-  <%= @playeroverview[:weekly_challenges] %>
-</p>
-
-<p>
-  <b>Games today:</b>
-  <%= @playeroverview[:games_today] %>
-</p>
-
-<p>
-  <b>Todays kills:</b>
-  <%= @playeroverview[:todays_kills] %>
-</p>
-
-<p>
-  <b>Last Game:</b>
-  <%= (@playeroverview[:last_game_date]).strftime("%m/%d/%Y %I:%M %p") unless @playeroverview[:last_game_date] == nil %>
+  <b>Kill/Death</b>
+  <%= @playerstats[:kd] %>
 </p>
 
 <%= link_to 'Edit', edit_player_path(@player) %> |

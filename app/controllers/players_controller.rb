@@ -14,10 +14,11 @@ class PlayersController < ApplicationController
   # GET /players/1.xml
   def show
     @player = Player.find(params[:id])
-    @playeroverview = PlayerOverview.find(@player.gamertag)
+    @playerstats = PlayerStats.find(@player.gamertag)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @player }
+      format.json { render :json => @player}
     end
   end
 

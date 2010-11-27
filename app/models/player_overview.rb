@@ -23,10 +23,6 @@ class PlayerOverview
     weekly_challenges = doc.css('span#ctl00_mainContent_weeklyChallengesLabel').first
     player[:weekly_challenges] = weekly_challenges.content unless weekly_challenges == nil
     
-    weekly_challenges = doc.css('span#ctl00_mainContent_weeklyChallengesLabel').first
-    player[:weekly_challenges] = weekly_challenges.content unless weekly_challenges == nil
-    
-    
     doc = Nokogiri::HTML(open("http://www.bungie.net/Stats/Reach/PlayerGameHistory.aspx?player=#{CGI.escape(id.to_s)}"))
     games = doc.css('td .score')
     game_dates = doc.css('td .date')
