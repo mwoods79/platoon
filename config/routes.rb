@@ -5,4 +5,7 @@ Reachstats::Application.routes.draw do
 
   resources :players
   root :to => "home#index"
+  
+  match 'stats/:player', :to => 'players#stats'
+  
 end

@@ -21,6 +21,18 @@ class PlayersController < ApplicationController
       format.json { render :json => @player}
     end
   end
+  
+  # GET stats/iCode0100Fun
+  # GET stats/iCode0100Fun.xml
+  # GET stats/iCode0100Fun.json
+  def stats
+    @playerstats = PlayerStats.find(params[:player])
+    respond_to do |format|
+      format.html # stats.html.erb
+      format.xml  { render :xml => @playerstats }
+      format.json { render :json => @playerstats}
+    end
+  end
 
   # GET /players/new
   # GET /players/new.xml

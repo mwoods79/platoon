@@ -3,7 +3,7 @@ class PlayerStats
   def self.find(id)
     doc = Nokogiri::HTML(open("http://www.bungie.net/Stats/Reach/CareerStats/default.aspx?player=#{CGI.escape(id.to_s)}&vc=3"))
     player = Hash.new
-    
+    player[:gamertag] = id
     player[:kills] = doc.css('#ctl00_mainContent_killsLabel').first.content
     player[:deaths] = doc.css('#ctl00_mainContent_deathsLabel').first.content
     player[:games_played] = doc.css('ul.legend li.number').first.content
